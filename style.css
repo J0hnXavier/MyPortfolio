@@ -3,7 +3,7 @@
 
 :root {
     --header-color: #3e3e3e;
-    --white-color: #fff;
+    --white-color: #e0baba;
     --bg-color1: #fafafa;
     --bg-color2: #e7746f;
     --bg-color3: hsl(197, 72%, 57%);
@@ -30,13 +30,12 @@ html {
 body {
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
-    color: #888;
-    font-weight: 300;
+    color: #7d6969;
+    font-weight: 400;
 }
 
 /* navigation bar */
 .wrapper {
-    background-image: url(./assets/images/bg.png);
     box-shadow: inset 0px 1px 0px 0px rgb(0 0 0 / 5%), inset 0px 2px 3px 0px rgb(0 0 0 / 10%);
 }
 
@@ -93,13 +92,15 @@ div.container {
 
 div.myphoto img {
     width: 22.5rem;
-    height: 22.5rem; 
-    border-radius: 50%;
+    height: 25.5rem; 
+    border-radius: 3%;
     display: block;
 }
 
 div.info {
     padding: 0.1rem 1.7rem;
+    color: rgb(46, 45, 46);
+    font-weight: 500;
 }
 
 div.info h1 {
@@ -125,7 +126,6 @@ div.info strong {
     letter-spacing: -0.025em;
     text-shadow: -1px -1px 0.5px rgb(0 0 0 / 50%);
     text-decoration: none;
-    background-image: url(./assets/images/bg.png), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
     border-radius: 0.5rem;
     box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 50%), inset 0px 2px 1px 0px rgb(255 255 255 / 75%);
     cursor: pointer;
@@ -136,12 +136,14 @@ div.info strong {
     padding: 1rem 3.3rem;
     display: inline-block;
     margin-top: 2rem;
-    background-color: var(--bg-color3);
+    background-color: var(--bg-color3-hover);
     transition: background-color 0.2s ease-out;
 }
 
 #about a.button:hover {
     background-color: var(--bg-color3-hover);
+    font-size: 2em;
+    transition: 1s;
 }
 
 /* project section */
